@@ -62,8 +62,8 @@ def create_ui(window):
       // Handle parameters for each element type
       switch (el.type) {
         case "BasicButton":
-          params += `, ${el.width}, ${el.height}, text='${el.text}',
-          font = '${el.fontFamily}', font_size=${el.fontSize} font_color = '${el.textColor}',
+          params += `, width=${el.width}, height=${el.height}, text='${el.text}',
+          font = '${el.fontFamily}', font_size=${el.fontSize}, font_color = '${el.textColor}',
           idle_color = '${el.idleColor}', hover_color = '${el.hoverColor}',  
           border_color='${el.borderColor}', border_thickness=${el.borderThickness},
           on_hover=${el.type}${index}_on_hover, on_click=${el.type}${index}_on_click, on_release=${el.type}${index}_on_release, name = "${el.type}${index}_name"
